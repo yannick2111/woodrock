@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Woodrock Festival</title>
+        <link rel="icon" type="image/png" href="img/logo-blank.png">
+
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="tabpages.css">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <header>
+      <!--
+        <section class="container carousel">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container">
+                  <img class="d-block w-100" src="img/Woodrock 2020 Homepage Header_1 CANCELED.jpg" alt="Overview Mode">
+                    <div class="carousel-caption text-top">
+                      <h1>Wichtige Meldung!</h1>
+                      <p>Leider mussten wir das Dobler Woodrock Festival 2020 absagen. Weitere Infos findet Ihr hier:</p>
+                      <p><a class="btn btn-lg btn-primary" href="#" role="button">mehr Infos</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container">
+                      <img class="d-block w-100" src="img/carousel2.jpg" alt="Overview Mode" width="100%" height="50%">
+                  </div>
+                </div>
+                <div class="carousel-item">        
+                  <div class="container">
+                      <img class="d-block w-100" src="img/carousel4.jpg" alt="Overview Mode">
+                    </div>
+                  </div>
+                </div>
+              
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          </section>
+        -->
+          
+
+        <!-- Navigationsleiste -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo-schrift.png" alt="Menü" width="60" height="60" class="d-inline-block align-top" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link tablink" href="#" onclick="openPage('News', this, 'green')">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tablink" href="#" onclick="openPage('Tickets', this, 'green')">Tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"onclick=" openPage('Bands', this, 'green')">Bands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('Events', this, 'green')">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('Infos', this, 'green')">Infos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('Galerie', this, 'green')">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('Mitmachen', this, 'green')">Mitmachen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="openPage('Kontakt', this, 'green')">Kontakt</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Suche" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
+              </form>
+            </div>
+          </nav>
+        </header>
+        <!-- Huaptcontend -->
+        <main role="main">
+            
+
+            <section class="text-center">
+              <h1>Dobler Woodrock Festival</h1>
+              <p>
+                  Das kleine aber feine Rock Festival auf dem Dobel!
+              </p>
+          </section>
+
+          <div class="container padding-1">
+            <!-- Erste Seite: News -->
+            <div id="News" class="tabcontent">
+                <h2>News</h2>
+                <p>
+                    Hier findet Ihr die wichtigsten Neuigkeiten Rund ums Festival.
+                </p>
+                <p>
+                  Der perfekte Ort um auf dem laufenden zu bleiben.
+                </p>
+               
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img src="..." class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">CANCELED</h5>
+                      Hallo liebe Woodrocker, es hat sich ja in den vergangenen Wochen schon angekündigt, schweren Herzens müssen wir das diesjährige Woodrock Festival absagen… Wir wollten euch in diesen Wochen mit unseren Bands überraschen und alles Weitere bekannt geben. Dass uns COVID-19 so in unserem täglichen Leben einschränkt hat wahrscheinlich keiner erwartet, doch momentan steht unser aller Gesundhe
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img src="..." class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">List-based media object</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img src="..." class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">List-based media object</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                  </li>
+                </ul>
+            </div>
+
+            <!-- Zweite Seite: Tickets -->
+            <div id="Tickets" class="tabcontent">
+                <h2>Tickets</h2>
+                <p>
+                  Der Online-Vorverkauf 2019 ist beendet.
+                  Ihr bekommt weiterhin Tickets bei allen Filialen der Sparkasse Pforzheim Calw und bei Schreibwaren Joel,  Hauptstraße 18, 75335 Dobel.
+                </p>
+                <p>
+                  Ebenfalls könnt Ihr noch an der Abendkasse eure Tickets beziehen (solange der Vorrat reicht)
+                </p>
+            </div>
+
+            <div id="Bands" class="tabcontent">
+              <div class="features-boxed" >
+                <div class="container">
+                    <div class="row justify-content-center features">
+                        <div class="col-sm-7 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-map-marker icon"></i>
+                                <h3 class="name">BIG BALLS</h3>
+                                <p class="description">On Stage am Samstag ab 22:30 Uhr</p><a class="learn-more" href="#">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-7 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-clock-o icon"></i>
+                                <h3 class="name">CREKKO</h3>
+                                <p class="description">On Stage am Freitag ab 22:30 Uhr</p><a class="learn-more" href="#">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-7 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-list-alt icon"></i>
+                                <h3 class="name">BALLS GONE WILD </h3>
+                                <p class="description">On Stage am Samstag ab 21:15 Uhr</p><a class="learn-more" href="#">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-7 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-leaf icon"></i>
+                                <h3 class="name">STRY </h3>
+                                <p class="description">On Stage am Samstag ab 19:15 Uhr</p><a class="learn-more" href="#">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-7 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-plane icon"></i>
+                                <h3 class="name">HEART OF CHROME </h3>
+                                <p class="description">On Stage am Freitag Ab 21:00 Uhr</p><a class="learn-more" href="#">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-7 col-md-5 col-lg-4 item">
+                            <div class="box"><i class="fa fa-phone icon"></i>
+                                <h3 class="name">ROLLDOGX</h3>
+                                <p class="description">On Stage am Samstag ab 20:15 Uhr</p><a class="learn-more" href="#">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-7 col-md-5 col-lg-4 item">
+                          <div class="box"><i class="fa fa-leaf icon"></i>
+                              <h3 class="name">THE SCIENCES </h3>
+                              <p class="description">On Stage am Freitag ab 20:00 Uhr</p><a class="learn-more" href="#">Learn more »</a></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+              
+          </div>
+
+          <div id="Events" class="tabcontent">
+            <h2>Events</h2>
+            <p>
+              
+            </p>
+            
+        </div>
+
+        <div id="Infos" class="tabcontent">
+          <h2>Infos</h2>
+          <h3>Festival ABC</h3>
+          <p>
+            Der Online-Vorverkauf 2019 ist beendet.
+            Ihr bekommt weiterhin Tickets bei allen Filialen der Sparkasse Pforzheim Calw und bei Schreibwaren Joel,  Hauptstraße 18, 75335 Dobel.
+          </p>
+          
+      </div>
+
+      <div id="Mitmachen" class="tabcontent">
+        <h2>Mitmachen</h2>
+        <p>
+          Streetteam
+        </p>
+        <p>
+          Aufbau
+        </p>  
+    </div>
+
+    <div id="Kontakt" class="tabcontent">
+      <h2>Kontakt</h2>
+      <p>
+        <p id="success">Vielen Dank für deine Anfrage wir bearbeiten dein Anliegen so schnell wie möglich!</p>
+        <form class="kontakt" method="POST" action="mailto:yannick@woodrock-dobel.de?subject=Formular" onSubmit="return checkSendForm();">
+          <div class="form-group">
+            <label for="FormControlInput1">Email</label>
+            <input type="email" id="email" class="form-control" id="FormControlInput1" placeholder="Max@Mustermann.de">
+          </div>
+          <div class="form-group">
+            <label for="FormControlInput2">Betreff</label>
+            <input type="text" id="betreff" class="form-control" id="FormControlInput2">
+          </div>
+          <div class="form-group">
+            <label for="FormControlTextarea1">Nachricht</label>
+            <textarea id="nachricht" class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type ="submit" class="btn btn-primary">Absenden</button>
+        </form>
+      </p>
+      
+  </div>
+        </div>
+
+        </main>
+
+    </body>
+</html>
